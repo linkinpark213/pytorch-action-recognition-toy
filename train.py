@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import torch.nn as nn
 import torch.utils.data
-from net_full import ActionLSTM
+from net import ActionLSTM
 from data import ActionDataset
 from tensorboardX import SummaryWriter
 

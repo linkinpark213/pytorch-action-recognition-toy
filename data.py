@@ -61,7 +61,7 @@ class ActionDataset(torch.utils.data.Dataset):
         self.SOLE_PATH = '%s/data/sole/test%d.mva'
         self.L_ANK_PATH = '%s/data/IMU/L_leg_%d.csv'
         self.R_ANK_PATH = '%s/data/IMU/R_leg_%d.csv'
-        self.WAIST_PATH = '%s/data/IMU/waist_%d.csv'
+        self.WAIST_PATH = '%s/data/IMU/Waist_%d.csv'
 
         self.sequences = []
         self.labels = []

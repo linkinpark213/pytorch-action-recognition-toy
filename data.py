@@ -48,9 +48,9 @@ def load_training_data(num, sole_file_path, IMU_L_ank_file_path, IMU_R_ank_file_
     else:
         IMU_data = IMU_data[:len(sole), :]
     data = np.hstack([sole, IMU_data])
-    data_1 = data[:1000, :]
-    data_2 = data[1000:2000, :]
-    data_3 = data[2000:3000, :]
+    data_1 = data[250:750, :]
+    data_2 = data[1250:1750, :]
+    data_3 = data[2250:2750, :]
 
     return data_1, data_2, data_3
 
@@ -66,7 +66,7 @@ class ActionDataset(torch.utils.data.Dataset):
         self.sequences = []
         self.labels = []
         self.tags = []
-        for data_num in range(0, 10):
+        for data_num in range(0, 50):
             sit, stand, walk = load_training_data(data_num + 1, self.SOLE_PATH, self.L_ANK_PATH, self.R_ANK_PATH,
                                                   self.WAIST_PATH)
             self.sequences.append(sit.astype(np.float32))

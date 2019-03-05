@@ -9,4 +9,7 @@ This is a practice program for the Spring Seminar 2019 in the Robotics Lab of NA
 - TensorboardX 1.6
 
 ## Usage
-`net.py` and `train.py` are unfinished. Finish these code and run `python train.py`.
+Run `python train.py`.
+
+After running `train.py`, a `model.pth` file should have been created.
+Run `test.py` to test the model you have trained.
